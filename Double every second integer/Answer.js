@@ -1,21 +1,31 @@
-let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-let arr3 = [1, 2, 3];
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let arr2 = [1, 2];
+let arr3 = [1];
 let arr4 = [];
 
-// Double every second int in the array
-// Modifies the original array
+/**
+ * Double every second integer in the array.
+ * Returns a new array.
+ * 
+ * @param {number[]} params 
+ * @returns {number[]}
+ */
 const dblEverySecond = (params) => {
-  for (let idx = 1; idx < params.length; idx += 2) {
-    params[idx] = params[idx] * 2;
-  }
+  let result = params.map((val, idx) => {
+    if (idx % 2 == 1) return val * 2;
+    return val;
+  });
+  return result;
 };
 
-// Double every second int in the array
-// Modifies the original array
+/**
+ * Recursive solution to double every second integer in the array
+ * Returns a new array.
+ * 
+ * @param {number[]} params 
+ * @returns {number[]}
+ */
 const dblEverySecondRecursive = (params) => {
-  console.log(params);
-
   // Case 1: Array is empty, return an empty array.
   if (params.length == 0) return [];
   // Case 2: Array length is 1, return the array. Helps with odd length arrays.
