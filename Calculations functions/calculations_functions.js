@@ -1,51 +1,41 @@
 const zero = (func) => {
-    let leftNum = 0;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 0 : func(0);
 }
 
 const one = (func) => {
-    let leftNum = 1;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 1 : func(1);
 }
 
 const two = (func) => {
-    let leftNum = 2;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 2 : func(2);
 }
 
 const three = (func) => {
-    let leftNum = 3;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 3 : func(3);
 }
 
 const four = (func) => {
-    let leftNum = 4;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 4 : func(4);
 }
 
 const five = (func) => {
-    let leftNum = 5;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 5 : func(5);
 }
 
 const six = (func) => {
-    let leftNum = 6;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 6 : func(6);
 }
 
 const seven = (func) => {
-    let leftNum = 7;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 7 : func(7);
 }
 
 const eight = (func) => {
-    let leftNum = 8;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 8 : func(8);
 }
 
 const nine = (func) => {
-    let leftNum = 9;
-    return !func ? leftNum : func(leftNum);
+    return !func ? 9 : func(9);
 }
 
 // OPERATIONS ===================================================
@@ -65,7 +55,6 @@ const times = (rightNum) => (leftNum) => {
 const dividedBy = (rightNum) => (leftNum) => {
     return Math.floor(leftNum / rightNum);
 }
-
 
 console.log(eight(dividedBy(three())));
 console.log(seven(times(five())));
