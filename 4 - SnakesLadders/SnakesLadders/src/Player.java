@@ -62,6 +62,7 @@ public class Player {
         int rollTwo = (int) (Math.random() * 6) + 1;
         int rollOne = (int) (Math.random() * 6) + 1;
 
+        // Check if the player rolled a double
         if (rollOne == rollTwo) {
             this.doubleRoll = true;
             System.out.println("You rolled " + rollOne + " and " + rollTwo + ". You rolled a DOUBLE!");
@@ -70,6 +71,7 @@ public class Player {
             System.out.println("You rolled " + rollOne + " and " + rollTwo + ".");
         }
 
+        // Set the current roll to the sum of the two dice
         this.currentRoll = rollOne + rollTwo;
 
     }
