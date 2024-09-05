@@ -1,5 +1,2 @@
-./bin
-./lib
-./.vscode
-./node_modules
-./.env
+.vscode
+
