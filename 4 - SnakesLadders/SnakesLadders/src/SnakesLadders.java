@@ -1,3 +1,6 @@
+/*
+ * The main class for the Snakes and Ladders game. 
+ */
 public class SnakesLadders {
     public static void main(String[] args) throws Exception {
         Player playerOne = new Player();
