@@ -1,5 +1,19 @@
 import java.util.HashMap;
 
+/*
+ * Represents the board of the game.
+ * 
+ * The board class contains a HashMap of snakes and tails, where each snake is represented by a key-value pair,
+ * where the key is the snake's head position and the value is the snake's tail position.
+ * 
+ * The board class contains a HashMap of ladders and tops, where each ladder is represented by a key-value pair,
+ * where the key is the ladder's bottom position and the value is the ladder's top position.
+ * 
+ * The board class contains a method, movePlayer(), to move the player to a new position after rolling the dice.
+ * Method evaluates if the new position is the head of a snake or the bottom of a ladder, and moves the player accordingly.
+ * 
+ * 
+ */
 public class Board {
 
     /**
@@ -54,9 +68,7 @@ public class Board {
      * 
      * @param position the current position of the player
      * @param moves    the number of moves to make
-     * @result set the new position of the player after moving by the given number
-     *         of
-     *         moves
+     * @result set the new position of the player after moving by the given number of moves
      */
     public static void movePlayer(Player player) {
         // Calculate the new position of the player
