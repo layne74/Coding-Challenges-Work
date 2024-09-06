@@ -1,5 +1,13 @@
 import java.util.Scanner;
 
+/**
+ * Represents a player in the game.
+ * 
+ * The player class contains the player's current position on the board, the total from the last roll of the dice, and
+ * whether the last roll was a double.
+ * 
+ * The player class contains a method, rollDice(), to simulate the rolling of a six-sided die.
+ */
 public class Player {
     private int position = 1; // start at the first block
     private int currentRoll;
